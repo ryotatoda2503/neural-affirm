@@ -350,6 +350,20 @@ export function HomeClient() {
           </div>
         </div>
 
+        {/* Blog CTA */}
+        <div className="mt-12 border border-border rounded-lg p-6 text-center">
+          <h3 className="text-lg font-light mb-2">Blog</h3>
+          <p className="text-sm text-muted mb-4">
+            アファメーションの科学的知識・実践ガイド
+          </p>
+          <Link
+            href="/blog"
+            className="inline-block px-6 py-3 rounded-full border border-border text-sm text-muted hover:text-foreground transition-all duration-300 hover:scale-105"
+          >
+            ブログを読む →
+          </Link>
+        </div>
+
         {/* Footer */}
         <footer className="mt-20 pt-8 border-t border-border text-center">
           <p className="text-xs text-muted/40 tracking-wider">
