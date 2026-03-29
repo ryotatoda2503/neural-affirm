@@ -14,9 +14,62 @@ const notoSerifJP = Noto_Serif_JP({
   weight: ["300", "400", "500", "700"],
 });
 
+const SITE_URL = "https://neural-affirm.com";
+
 export const metadata: Metadata = {
-  title: "Affirmation Dictionary — 科学的アファメーション辞書",
-  description: "量子論・脳科学・心理学に基づく、朝と夜のアファメーション辞書",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Neural Affirm — 科学的アファメーション辞書",
+    template: "%s | Neural Affirm",
+  },
+  description:
+    "量子論・脳科学・心理学に基づく科学的アファメーション辞書。朝と夜の全68項目、ブロック自動クリアリング、脳波誘導セッション機能付き。",
+  keywords: [
+    "アファメーション",
+    "アファメーション 一覧",
+    "アファメーション 効果",
+    "アファメーション 科学的根拠",
+    "アファメーション 脳科学",
+    "朝のアファメーション",
+    "夜のアファメーション",
+    "アファメーション 潜在意識",
+    "アファメーション お金",
+    "バイノーラルビート アファメーション",
+    "ニューラルインストール",
+    "自動クリアリング",
+    "科学的アファメーション辞書",
+  ],
+  authors: [{ name: "Neural Affirm" }],
+  creator: "Neural Affirm",
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    url: SITE_URL,
+    siteName: "Neural Affirm",
+    title: "Neural Affirm — 科学的アファメーション辞書",
+    description:
+      "量子論・脳科学・心理学に基づく科学的アファメーション辞書。全68項目の朝夜アファメーション、ブロック自動クリアリング、脳波誘導セッション。",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Neural Affirm — 科学的アファメーション辞書",
+    description:
+      "量子論・脳科学・心理学に基づく科学的アファメーション辞書。聴くだけで潜在意識を書き換えるニューラルインストール機能搭載。",
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
