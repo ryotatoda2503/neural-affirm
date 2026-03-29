@@ -20,6 +20,13 @@ const SITE_URL = "https://neural-affirm.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  icons: {
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
   title: {
     default: "Neural Affirm — 科学的アファメーション辞書",
     template: "%s | Neural Affirm",
